@@ -69,6 +69,11 @@
 	background-color: #333;
 	border-color: #888 transparent transparent;
     }
+    .msg--box {
+	background: rgba(231, 255, 0, 0.20) none repeat scroll 0% 0%;
+	color: rgba(231, 255, 0, 1);
+	border: 1px solid rgba(231, 255, 0, 0.3);
+    }
     .search__button, .search__button--hero {
 	margin-top: 2px;
     }
@@ -88,7 +93,6 @@
 	margin-bottom: 3px;
     }
     .search--hover #search_button {
-
 	background: #383838;
     }
     .search--hover {
