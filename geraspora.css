@@ -1,353 +1,559 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document domain("geraspora.de") {
-   
-    body {
-        background-color: #151b1f;
-        color: #bcc7d1;
-        font-size: 10pt !important;
-    }
-    
-    .stream_container {
-        background-color: #1c2429;
-        border: none;
-        padding: 15px;
-        max-width: 600px;
-    }
-    
-    a {
-       color: #527b98 !important;
-    }
-    
-    a.tag {
-        color: #ad6d4d !important;
-        background-color: initial !important;
-        text-decoration: initial !important;
-    }
-  
-    a.tag:hover {
-        color: #bd866b;
-        background: none;
-    }
-    
-    a:visited {
-       color: #86543b;
-    }
+@-moz-document
+	domain("framasphere.org"),
+	domain("diasp.org"),
+	domain("despora.de"),
+	domain("diasporabr.com.br"),
+	domain("nerdpol.ch"),
+	domain("mondiaspora.net"),
+	domain("pod.orkz.net"),
+	domain("diasporabrazil.org"),
+	domain("pod.asap-soft.com"),
+	domain("diaspora.koehn.com"),
+	domain("ruhrspora.de"),
+	domain("sechat.org"),
+	domain("wk3.org"),
+	domain("londor.be"),
+	domain("berlinspora.de"),
+	domain("parteidervernunft.com"),
+	domain("pod.gedankenausbruch.com"),
+	domain("pod.shouldit.work"),
+	domain("d.consumium.org"),
+	domain("socializer.cc"),
+	domain("austriapod.at"),
+	domain("diaspora.punkbeer.me"),
+	domain("jons.gr"),
+	domain("sysad.org"),
+	domain("blr.club"),
+	domain("pod.readme.is"),
+	domain("canfly.org"),
+	domain("pod.disroot.org"),
+	domain("pod.thomasdalichow.de"),
+	domain("diaspora.subsignal.org"),
+	domain("diaspora.raven-ip.com"),
+	domain("overraskel.se"),
+	domain("diasp.ca"),
+	domain("iliketoast.net"),
+	domain("diaspora.hzsogood.net"),
+	domain("diaspora.psyco.fr"),
+	domain("www.freehuman.fr"),
+	domain("diaspora.loboto.ovh"),
+	domain("pod.hoizi.net"),
+	domain("pod.nomorestars.com"),
+	domain("revreso.de"),
+	domain("pod.ponk.pink"),
+	domain("diasp.nl"),
+	domain("social.baldr.io"),
+	domain("pod.promedol.com"),
+	domain("www.datataffel.dk"),
+	domain("pod.raunz.name"),
+	domain("diaspora.bohramt.de"),
+	domain("podbay.net"),
+	domain("pod.hfrc.de"),
+	domain("pod.tchncs.de"),
+	domain("social.elaon.de"),
+	domain("networkwizard.de"),
+	domain("spora.zone"),
+	domain("pod.sccn.club"),
+	domain("www.diasporaix.de"),
+	domain("pod.geraspora.de"),
+	domain("pod.4ray.co"),
+	domain("diaspora.permutationsofchaos.com"),
+	domain("pod.psynet.su"),
+	domain("therealtalk.org"),
+	domain("pod.dragondreaming.de"),
+	domain("librenet.gr"),
+	domain("russiandiaspora.org"),
+	domain("eat.egregious.ly"),
+	domain("pod.comin.dk"),
+	domain("diaspora.podzimek.org"),
+	domain("pubpod.alqualonde.org"),
+	domain("diaspora.soh.re"),
+	domain("diaspora.dorf-post.de"),
+	domain("diasporapr.tk"),
+	domain("pod.chaosdimension.de"),
+	domain("liberdade.digital"),
+	domain("pod.datenknoten.me"),
+	domain("friendica.tk")
+	{
 
-    .selectable {
-        color: #c0735e !important;
-    }
+		body,
+		.page-streams {
+			background-color: #151b1f;
+			color: #bcc7d1;
+			font-size: 10pt !important;
+		}
 
-    .hoverable:hover {
-        color: #c0735e !important;
-        background-color: #151b1f !important;
-    }
+		.stream_container {
+			background-color: #1c2429;
+			border: none;
+			padding: 15px;
+			max-width: 600px;
+		}
+
+		a {
+			color: #527b98 !important;
+		}
+
+		a:hover {
+			color: #87B4D0 !important;
+			text-decoration: initial;
+		}
+		
+		a.tag {
+			color: #ad6d4d !important;
+			background-color: initial !important;
+			text-decoration: initial !important;
+		}
+
+		a.tag:hover {
+			color: #bd866b;
+			background: none;
+		}
+
+		a:visited {
+			color: #86543b;
+		}
+
+		.selectable {
+			color: #c0735e !important;
+		}
+
+		.hoverable:hover {
+			color: #c0735e !important;
+			background-color: #151b1f !important;
+		}
+
+		.container-fluid {
+			margin: 0 auto;
+		}
+
+		.row-fluid {
+			margin-left:30px;
+		}
+
+		.offset1.span2 {
+			top: 80px;
+			position: fixed;
+			width: 200px;
+			margin-left: 0px !important;
+		}
+
+		.span6 {
+			margin-left: 270px !important;
+			margin:0 5px;
+		}
+
+		.span2.rightBar {
+			float: right;
+			margin-right: 20px;
+			width: 230px;
+			border-left: 1px solid #122838;
+			padding: 15px;
+		}
+
+		#hovercard_container {
+		}
+
+		blockquote {
+			border-left: 3px solid #005466;
+			background-color: #0a1a1d;
+			padding: 10px;
+			border-radius: 8px;
+			color: #00829e;
+		}
+
+		#stream_selection .selected .hoverable,
+		#stream_selection .selected
+		{
+			color: #55c7e2 !important;
+		}
+
+		hr {
+			border: initial !important;
+			border-bottom: 1px solid #151b1f !important;
+			margin: 10px;
+		}
+
+		#profile_horizontal_bar,
+		.profile_photo {
+			border: initial !important;
+		}
+
+		.comments .bd {
+			width: 476px;
+		} 
+
+		h2 {
+			padding-top: 15px;
+		}
+
+		h4 > a {
+			color: #70768f !important;
+		}
+
+		.stream_title {
+			color: #dc8774;
+			padding: 25px 10px 00px 10px;
+		}
+
+		.stream_element {
+			border: 0px solid #f00 !important;
+			margin-top: 25px;
+		}
+
+		#stream_selection a:hover,
+		#aspects_list li:hover {
+			color: #53a5c7 !important;
+			background-color: #151b1f !important;
+		}
+
+		#stream_selection a.selected {
+			color: #53a5c7;
+			background-color: #151b1f !important;
+			border-left: 2px dotted #53a5c7;
+		}
+
+		.opengraph-container {
+			border: none;
+			color: #064469;
+			padding: 10px;
+			max-width: 480px;
+			border-left: 2px dotted #c96e55;
+		}
+
+		.og-description {
+			padding: 5px;
+			font-size: 8pt;
+		}
+
+		.og-title {
+			color: #a98660;
+			padding: 0px 5px;
+			font-size: 8pt;
+		}
+
+		.og-title:hover {
+			color: #d5b99b;
+		}
+
+		.mentions-input-box {
+			background-color: #151b1f;
+			border:none;
+			color: #6e899c !important;
+			font-size: 80%;
+		}
+
+		.entypo, 
+		.control-icons {
+			color: #edad84 !important;
+			margin: 1px;
+		}
+
+		.entypo.warning {
+			margin-right: 8px;
+		}    
+
+		.entypo.warning:hover {
+			margin-right: 8px;
+			color: #f7b83a !important;
+		}    
+
+		.entypo.block:hover {
+			color: #dd0000 !important;
+		}    
+
+		.entypo.bell:hover {
+			color: #8dff00 !important;
+		}    
+
+		.entypo.cross:hover {
+			color: #00ffe9 !important;
+		}    
+
+		.entypo:hover {
+			color: #fbdeb6 !important;
+			margin: 1px;
+		}
+
+		.details {
+			font-size: 8pt;
+			color: #5b737b !important;
+		}
+
+		.comment_stream {
+			width: 490px;
+		}
+
+		.comment_stream .bd {
+			padding: 5px !important;
+		}
+
+		.comments .comment{
+			border: none !important;
+			padding-left: 8px !important;
+			margin-left: 10px !important;
+			color: #7791a2;
+			border-left: 3px dotted #4f5d31 !important;
+			font-size: 9pt;
+		}
+
+		.comment-content {
+			font-size: 8pt;
+		}
+
+		.comment_box, .as-input { 
+			background-color: #151b1f !important;
+			border: 1px solid #324049 !important;
+			color: #9bb2bc !important;
+			font-size: 10pt;
+			padding: 0px 5px 0px 5px !important;
+		}
+
+		.oembed, .collapsible {
+			min-width: 470px;
+		}
+
+		.as-selections {
+			border: none !important;
+			background-color: #151b1f !important;
+		}
+
+		.title {
+			border: 0px solid #324049 !important;        
+		}
+
+		.title h5{
+			background-color: #151b1f !important;
+			border: 0px solid #324049 !important;
+			border-bottom: 0px solid #9bb2bc !important;;
+			color: #9bb2bc !important;
+			font-size: 10pt;
+			padding: 0px 5px 0px 5px !important;
+		}
+
+		.author-name {
+			font-size: 12pt;
+			font-weight: normal !important;
+			color: #93b908 !important;
+		}
+
+		.comments .author-name {
+			font-size: 8pt;
+			font-weight: normal !important;
+			color: #749306 !important;
+		}
+
+		.pagination a {
+			background-color: #324049 !important;
+			border: initial !important;
+		}
+
+		.pagination a:hover {
+			color: #53a5c7;
+		}
+
+		#home_user_badge {
+			border-bottom: 1px solid #232e34 !important;
+		}
+
+		#publisher_textarea_wrapper .active {
+			background-color: #212a30 !important;
+			border: 1px solid #324049 !important;
+			margin-right: 60px;
+		}
+
+		#publisher_textarea_wrapper {
+			background-color: #212a30 !important;
+			border: 1px solid #324049 !important;
+			max-width: 530px;
+		}
 
 
-    blockquote {
-       border-left: 3px solid #005466;
-       background-color: #0a1a1d;
-       padding: 10px;
-       border-radius: 8px;
-       color: #00829e;
-    }
-    
-    #stream_selection .selected .hoverable,
-    #stream_selection .selected
-    {
-       color: #55c7e2 !important;
-    }
-    
-    hr {
-        border: initial !important;
-        border-bottom: 1px solid #151b1f !important;
-        margin: 10px;
-    }
-    
-    #profile_horizontal_bar,
-    .profile_photo {
-        border: initial !important;
-    }
-    
-    .bd {
-      width: 500px;
-    } 
-    
-    .comments .bd {
-      width: 476px;
-    } 
-    
-    h2 {
-        padding-top: 15px;
-    }
-    
-    h4 > a {
-        color: #70768f !important;
-    }
-    
-    .stream_title {
-        color: #dc8774;
-       padding: 25px 10px 00px 10px;
-    }
-    
-    .stream_element {
-        border: 0px solid #151b1f !important;
-    }
-    
-    #stream_selection a:hover,
-    #aspects_list li:hover {
-        color: #53a5c7 !important;
-        background-color: #151b1f !important;
-    }
+		#publisher .row-fluid {
+			background-color: initial;
+			padding: 0px;
+			margin: 5px;
+			width: 500px;
+		}
 
-    #stream_selection a.selected {
-        color: #53a5c7;
-        background-color: #151b1f !important;
-        border-left: 2px dotted #53a5c7;
-    }
+		#single-post-interactions .comment.media.new_comment_form_wrapper {
+			border: initial;
+			margin: 30px 0px;
+		}
 
-    .opengraph-container {
-        border: none;
-        color: #064469;
-        margin-left: 10px;
-        padding: 10px;
-        max-width: 480px;
-        border-left: 2px dotted #c96e55;
-    }
+		#single-post-content h2 {
+			padding: 30px 0;
+			font-size: 18pt;
+		}
 
-    .og-description {
-        padding: 5px;
-        font-size: 8pt;
-    }
+		#single-post-content {
+			position: fixed;
+			float: left;
+			padding: 30px;
+			margin-left: 10px !important;
+			border: 0px solid #f00 !important;
+		}
 
-        color: #a98660;
-        padding: 0px 5px;
-        font-size: 8pt;
-    }
-    
-    .og-title:hover {
-        color: #d5b99b;
-    }
-    
-    .mentions-input-box {
-        background-color: #151b1f;
-        border:none;
-        color: #6e899c !important;
-        font-size: 80%;
-    }
-     
-    .entypo, 
-    .control-icons {
-        color: #edad84 !important;
-        margin: 1px;
-    }
-    
-    .entypo.warning {
-       margin-right: 8px;
-    }    
+		div#head.row-fluid,
+		#single-post-interactions {
+			padding: 30px;
+			margin-left: 10px !important;
+			border: 0px solid #f00 !important;
+			float: right;
+			min-width: 540px;
+			background: -moz-linear-gradient(left, rgba(21,27,31,0.95) 50%, rgba(21,27,31,0) 100%);
+			background: linear-gradient(to right, rgba(21,27,31,0.95) 50%,rgba(21,27,31,0) 100%);
+		}
 
-    .entypo.warning:hover {
-       margin-right: 8px;
-       color: #f7b83a !important;
-    }    
+		.public_toggle {
+			margin-right: 30px;
+		}
 
-    .entypo.block:hover {
-       color: #dd0000 !important;
-    }    
+		#invite_code {
+			background: none !important;
+			background-color: #1c2429 !important;
+			border: 1px solid #2a373e !important;
+			color: #91a7a4 !important;
+			font-size: 9pt;
+			text-shadow: none;        
+		}
 
-    .entypo.bell:hover {
-       color: #8dff00 !important;
-    }    
+		textarea {    
+			background: none !important;
+			background-color: #151b1f !important;
+			border: 0px solid #427b98 !important;
+			color: #91a7a4 !important;
+			font-size: 9pt;
+			text-shadow: none;
+		}
 
-    .entypo.cross:hover {
-       color: #00ffe9 !important;
-    }    
+		#button_container {
+			border: 0px solid #324049 !important;
+			padding: initial;
+			margin: initial;
+		}
 
+		.btn.btn-primary,
+		.btn.btn-default {
+			background: none !important;
+			background-color: #2F556F !important;
+			border: 1px solid #0F212E !important;
+			color: #8FB4CF !important;
+			font-size: 10pt;
+			text-shadow: none;
+		}
 
-    .entypo:hover {
-       color: #fbdeb6 !important;
-       margin: 1px;
-    }
+		.btn.btn-default:hover {
+			background-color: #467695 !important;
+			color: #A3CBE5 !important;			
+		}
+		
+		.btn.btn-primary {
+			background-color: #378B12 !important;
+			color: #90EF65 !important;
+		}
+		
+		.btn.btn-primary:hover {
+			background-color: #4BBA1A !important;
+			color: #C8F9B1 !important;
+		}
+		
+		.timeago {
+			font-size: 7pt;
+			color: #5b737b;
+		}
 
-    .details {
-        font-size: 8pt;
-        color: #5b737b !important;
-    }
-    
-    .comment_stream {
-        width: 490px;
-    }
-    
-    .comment_stream .bd {
-        padding: 5px !important;
-    }
-    
-    .comments .comment{
-        border: none !important;
-        padding-left: 8px !important;
-        margin-left: 10px !important;
-        color: #7791a2;
-        border-left: 3px dotted #4f5d31 !important;
-        font-size: 9pt;
-    }
+		div.hovercard_footer {
+            border-top: 1px solid #f00;
+		}
 
-    .comment-content {
-        font-size: 8pt;
-    }
-    
-    .comment_box, .as-input { 
-        background-color: #151b1f !important;
-        border: 1px solid #324049 !important;
-        color: #9bb2bc !important;
-        font-size: 10pt;
-        padding: 0px 5px 0px 5px !important;
-    }
+		.footer_container {
+			background-color: #151B1F;
+			padding: 6px;	
+		}
+		
+		#hovercard {
+			box-shadow: 0px 0px 10px rgba(20,20,20,0.9);
+			background-color: #151B1F;
+			border: 1px solid #35424D;
+			padding: 6px;
+            height: 100px;
+		}
 
-    .oembed, .collapsible {
-        min-width: 470px;
-    }
-    
-    .as-selections {
-        border: none !important;
-        background-color: #151b1f !important;
-    }
-    
-    .title {
-        border: 0px solid #324049 !important;        
-    }
-    
-    .title h5{
-        background-color: #151b1f !important;
-        border: 0px solid #324049 !important;
-        border-bottom: 0px solid #9bb2bc !important;;
-        color: #9bb2bc !important;
-        font-size: 10pt;
-        padding: 0px 5px 0px 5px !important;
-    }
-    
-    .author-name {
-        font-size: 12pt;
-        font-weight: normal !important;
-        color: #93b908 !important;
-    }
-    
-    .comments .author-name {
-        font-size: 8pt;
-        font-weight: normal !important;
-        color: #749306 !important;
-    }
+		.rightBar {
+			font-size: 8pt !important;   
+		}
 
-    .pagination a {
-        background-color: #324049 !important;
-        border: initial !important;
-    }
-    
-    .pagination a:hover {
-       color: #53a5c7;
-    }
+		.thumb img,
+		.opengraph a img {
+			box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
+			-webkit-box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
+			-moz-box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
+            border: 1px solid #35424D;
+    		border-radius: 5px;
+		}
 
-    #button_container {
-       border: 0px solid #324049 !important;
-    }
-    
-    #home_user_badge {
-        border-bottom: 1px solid #232e34 !important;
-    }
-    
-    #publisher_textarea_wrapper {
-        border: none;
-        background-color: #212a30 !important;
-        border: 1px solid #324049 !important;
-        margin-right: 30px;
-    }
-    
-    #publisher {
-        background-color: initial;
-        padding: 5px;
-        margin: 5px;
-    }
+		img.avatar {
+			box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
+			-webkit-box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
+			-moz-box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
+			border-radius: 40px;
+			border: 2px solid #749306;
+			padding: 1px;
+		}
 
-    .public_toggle {
-        margin-right: 30px;
-    }
-    
-    #invite_code {
-        background: none !important;
-        background-color: #1c2429 !important;
-        border: 1px solid #2a373e !important;
-        color: #91a7a4 !important;
-        font-size: 9pt;
-        text-shadow: none;        
-    }
-    
-    textarea {    
-        background: none !important;
-        background-color: #151b1f !important;
-        border: 0px solid #427b98 !important;
-        color: #91a7a4 !important;
-        font-size: 9pt;
-        text-shadow: none;
-    }
+		img.avatar.small {
+			border-radius: 30px;
+			border: 2px solid #749306;
+			padding: 1px;
+		}
 
-    .btn.btn-default {
-        background: none !important;
-        background-color: #151b1f !important;
-        border: 1px solid #427b98 !important;
-        color: #91a7a4 !important;
-        font-size: 10pt;
-        text-shadow: none;
-    }
+		.twitter-tweet {
+			border-left: 3px dashed #4f7bb4;
+			margin-left: 10px;
+		}
 
-    .timeago {
-        font-size: 7pt;
-        color: #5b737b;
-    }
+		.active a {
+			color: #7cbbd5 !important;
+		}
 
-    .rightBar {
-        font-size: 8pt !important;   
-    }
-    
-    img .avatar {
-         box-shadow: inset 5px 5px 5px 0px rgba(0,0,0,0.8);        
-    }
-    
-    .avatar.small {
-        border-radius: 30px;
-        border: 2px solid #749306;
-        padding: 1px;
-       
-    }
-    
-    .twitter-tweet {
-       border-left: 3px dashed #4f7bb4;
-       margin-left: 10px;
-    }
-    
-    .active a {
-        color: #7cbbd5 !important;
-    }
-    
-    .post-content .reshare {
-        border-left: 4px double #93b908 !important;
-    }
-    
-    .info {
-        text-align: right;
-        font-size: 8pt;
-        float:right;
-    }
-    
-    .profile_header {
-        border: initial !important;
-    }
-    
-    .expander {
-        background-image: linear-gradient(transparent 0px, #151b1f 80%) !important;
-        border: none !important;
-        border-radius: 5px;
-        border-bottom: 1px solid #3a5b68 !important;
-        padding: 3px;
-        height: 10px;
-        color: #53a5c7 !important;
-    }
+		.post-content .reshare {
+			border-left: 4px double #93b908 !important;
+		}
+
+		.info {
+			text-align: right;
+			font-size: 8pt;
+			float:right;
+		}
+
+		.profile_header {
+			border: initial !important;
+		}
+
+		.expander {
+			background-image: linear-gradient(transparent 0px, #151b1f 80%) !important;
+			border: none !important;
+			border-radius: 5px;
+			border-bottom: 1px solid #3a5b68 !important;
+			padding: 3px;
+			height: 10px;
+			color: #53a5c7 !important;
+		}
+
+		.container {
+			border-top: 1px dotted #1F3A4D !important;
+		}
+
+		code {
+			background-color: #452E2E;
+			color: #C94E4E;
+			border: 1px solid #5D2727;
+			margin: 0px 5px 0px 5px;
+			padding: 2px 5px;
+		}
 }
+
+
