@@ -96,12 +96,6 @@
 			max-width: 600px;
 		}
 		
-		.container {
-			width: 850px;
-			position:  fixed !important;
-			left: 100px;
-		}
-		
 		.span3.offset1 {
 			margin-top: 60px;
 		}
@@ -319,7 +313,6 @@
 			width: 490px;
 		} 
 		
-		
 		.comment .media,
 		.comments .media {
 			width: 490px;
@@ -365,6 +358,12 @@
 		#user_password {
 			background-color: #151b1f !important;
 			border: 1px solid #324049 !important;
+		}
+		
+		#user_username:hover,
+		#user_password:hover {
+			background-color: #181F24 !important;
+			border: 1px solid #3B4C57 !important;
 		}
 
 
@@ -428,12 +427,32 @@
 			max-width: 530px;
 		}
 
-
+		#publisher.closed #publisher_textarea_wrapper {
+    		border: 1px solid #4C8CB5 !important;
+		}
+		
 		#publisher .row-fluid {
 			background-color: initial;
 			padding: 0px;
 			margin: 5px;
 			width: 500px;
+		}
+		
+		header #global_search form input {
+			background-color: #0E1E29 !important;
+			border: 1px solid #111 !important;
+			box-shadow: inset 0px 0px 5px rgba(52,115,158,0.6) !important;;
+			outline: initial;
+			color: #ccc;
+			padding: 2px 10px !important;
+			width: 300px;
+			height: 20px;
+		}
+
+		header #global_search form input:focus {
+			border: 1px solid #326E95 !important;
+			background-color: #152F40 !important;
+			box-shadow: 0px 0px 5px rgba(130,130,130,0.9);
 		}
 
 		#single-post-interactions .comment.media.new_comment_form_wrapper {
@@ -504,6 +523,7 @@
 			text-shadow: none;
 		}
 
+		.btn-large:hover,
 		.btn.btn-default:hover {
 			background-color: #467695 !important;
 			color: #A3CBE5 !important;			
