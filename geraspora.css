@@ -576,14 +576,23 @@
 			font-size: 0.8rem !important;   
 		}
 
-		.thumb img,
+		img[style] {
+    	}
+		
+	    .oembed .thumb img {
+			border-radius: 5px;
+			border: 0px solid #f00 !important;
+			background-image: none !important;
+			box-shadow: inset 4px 4px 280px rgba(14,30,41,1.0);
+		}
+		
 		.opengraph-container img {
 			box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
 			-webkit-box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
 			-moz-box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
-            border: 0px solid #35424D;
+            border: 1px solid #f00 !important;
     		border-radius: 5px;
-			padding-right: initial !important;;
+			background: initial !important;
 		}
 
 		img.avatar {
