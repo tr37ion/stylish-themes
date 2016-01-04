@@ -556,7 +556,7 @@
 		}
 
 		div.hovercard_footer {
-            border-top: 1px solid #f00;
+            border-top: 0px solid #f00;
 		}
 
 		.footer_container {
@@ -581,7 +581,7 @@
 		
 	    .oembed .thumb img {
 			border-radius: 5px;
-			border: 0px solid #f00 !important;
+			border: 0px solid #0f0 !important;
 			background-image: none !important;
 			box-shadow: inset 4px 4px 280px rgba(14,30,41,1.0);
 		}
@@ -590,8 +590,9 @@
 			box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
 			-webkit-box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
 			-moz-box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
-            border: 1px solid #f00 !important;
+            border: 0px solid #45525D !important;
     		border-radius: 5px;
+			padding: 1px !important;
 			background: initial !important;
 		}
 
