@@ -1,3 +1,8 @@
+/*
+	author: tr37ion
+	Get the newest veersion from: https://github.com/tr37ion/stylish-themes.git
+*/
+
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document
@@ -77,7 +82,6 @@
 	domain("pod.datenknoten.me"),
 	domain("friendica.tk")
 	{
-
 		body,
 		.page-streams {
 			background-color: #151b1f;
@@ -90,6 +94,16 @@
 			border: none;
 			padding: 15px;
 			max-width: 600px;
+		}
+		
+		.container {
+			width: 850px;
+			position:  fixed !important;
+			left: 100px;
+		}
+		
+		.span3.offset1 {
+			margin-top: 60px;
 		}
 
 		a {
@@ -116,6 +130,17 @@
 			color: #86543b;
 		}
 
+		/* Move it to the beginning of the tag cloud, please */
+		#new_tag_following {
+			display: none;
+		}
+		
+		#new_tag_following {
+			background-color: #1F3A4D !important;
+			border: initial !important;
+			float: left;
+		}
+		
 		.selectable {
 			color: #c0735e !important;
 		}
@@ -294,8 +319,11 @@
 			width: 490px;
 		} 
 		
+		
+		.comment .media,
 		.comments .media {
 			width: 490px;
+			margin-left: 3px;
 		} 
 		
 		.comments .comment{
@@ -307,6 +335,15 @@
 			font-size: 0.8rem;
 		}
 
+		.comments .comment img,
+		.stream-photo-link img {
+			box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
+			-webkit-box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
+			-moz-box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
+			border-radius: 5px;
+			margin: 4px 0px;
+		}
+		
 		.comment-content {
 			font-size: 0.75rem;
 		}
@@ -495,7 +532,7 @@
 		
 		.timeago {
 			font-size: 0.7rem;
-			color: #5b737b;
+			color: #3b535b;
 		}
 
 		div.hovercard_footer {
@@ -520,12 +557,13 @@
 		}
 
 		.thumb img,
-		.opengraph a img {
+		.opengraph-container img {
 			box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
 			-webkit-box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
 			-moz-box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
-            border: 1px solid #35424D;
+            border: 0px solid #35424D;
     		border-radius: 5px;
+			padding-right: initial !important;;
 		}
 
 		img.avatar {
@@ -550,17 +588,13 @@
 			background-color: #35424D;			
 		}
 		
-		.twitter-tweet {
-			border-left: 3px dashed #4f7bb4;
-			margin-left: 10px;
-		}
 
 		.active a {
 			color: #7cbbd5 !important;
 		}
 
 		.post-content .reshare {
-			border-left: 4px double #93b908 !important;
+			border-left: 4px double #376687 !important;
 		}
 
 		.info {
@@ -613,7 +647,7 @@
 		.container {
 			border-top: 1px dotted #1F3A4D !important;
 		}
-
+		
 		pre,
 		code {
 			background-color: #452E2E;
@@ -625,6 +659,12 @@
 
 		.loader {
 		}
+
+		.twitter-tweet {
+			border-left: 3px solid #4f7bb4;
+			margin-left: 10px;
+		}
+
 		
 		#author_info {
 			margin-top: 100px;
