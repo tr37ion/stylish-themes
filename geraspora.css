@@ -152,7 +152,7 @@
 			border-left: 1px solid #122838;
 			padding: 15px;
 		}
-
+		
 		#hovercard_container {
 		}
 
@@ -180,10 +180,6 @@
 		.profile_photo {
 			border: initial !important;
 		}
-
-		.comments .bd {
-			width: 476px;
-		} 
 
 		h2 {
 			padding-top: 15px;
@@ -224,7 +220,7 @@
 			color: #064469;
 			padding: 10px;
 			max-width: 480px;
-			border-left: 2px dotted #c96e55;
+			border-left: 5px dotted #c96e55;
 		}
 
 		.og-description {
@@ -291,20 +287,28 @@
 		}
 
 		.comment_stream .bd {
-			padding: 5px !important;
+			padding: 0px !important;
 		}
 
+		.comments .bd {
+			width: 490px;
+		} 
+		
+		.comments .media {
+			width: 490px;
+		} 
+		
 		.comments .comment{
 			border: none !important;
 			padding-left: 8px !important;
 			margin-left: 10px !important;
 			color: #7791a2;
 			border-left: 3px dotted #4f5d31 !important;
-			font-size: 0.9rem;
+			font-size: 0.8rem;
 		}
 
 		.comment-content {
-			font-size: 0.85rem;
+			font-size: 0.75rem;
 		}
 
 		.comment_box, .as-input { 
@@ -313,7 +317,19 @@
 			color: #9bb2bc !important;
 			font-size: 0.9rem;
 			padding: 0px 5px 0px 5px !important;
+			margin: 4px 0px;
 		}
+		
+		fieldset {
+			background-color: initial !important;
+		}
+		
+		#user_username,
+		#user_password {
+			background-color: #151b1f !important;
+			border: 1px solid #324049 !important;
+		}
+
 
 		.oembed, .collapsible {
 			min-width: 470px;
@@ -440,6 +456,7 @@
 			margin: initial;
 		}
 
+		.btn-large,
 		.btn.btn-primary,
 		.btn.btn-default {
 			background: none !important;
@@ -463,6 +480,17 @@
 		.btn.btn-primary:hover {
 			background-color: #4BBA1A !important;
 			color: #C8F9B1 !important;
+		}
+		
+		.btn.btn-default[disabled],
+		.btn.btn-primary[disabled] {
+			background-color: #444 !important;
+			color: #000 !important;
+		}
+		
+		.btn.dropdown-toggle.green {
+			background-color: #69C32C !important;
+			color: #39661B !important;
 		}
 		
 		.timeago {
@@ -506,15 +534,22 @@
 			-moz-box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
 			border-radius: 40px;
 			border: 2px solid #749306;
+			background-color: #45525D;
 			padding: 1px;
 		}
 
 		img.avatar.small {
 			border-radius: 30px;
 			border: 2px solid #749306;
+			background-color: #45525D;
 			padding: 1px;
+			margin: 2px;
 		}
 
+		img.avatar.avatar.user-menu-avatar {
+			background-color: #35424D;			
+		}
+		
 		.twitter-tweet {
 			border-left: 3px dashed #4f7bb4;
 			margin-left: 10px;
@@ -579,12 +614,28 @@
 			border-top: 1px dotted #1F3A4D !important;
 		}
 
+		pre,
 		code {
 			background-color: #452E2E;
 			color: #C94E4E;
 			border: 1px solid #5D2727;
 			margin: 0px 5px 0px 5px;
 			padding: 2px 5px;
+		}
+
+		.loader {
+		}
+		
+		#author_info {
+			margin-top: 100px;
+			margin-bottom: 60px;
+		}
+		.profile_header {
+			max-width: 620px;
+		}
+		
+		#profile {
+			margin-top: 40px;
 		}
 }
 
