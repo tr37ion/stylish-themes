@@ -1,6 +1,6 @@
 /*
 	author: tr37ion
-	Get the newest veersion from: https://github.com/tr37ion/stylish-themes.git
+	Get the newest version from: https://github.com/tr37ion/stylish-themes.git
 */
 
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -200,12 +200,21 @@
 			border: initial !important;
 		}
 
+		h1 {
+			font-size: 1.5rem;
+		}
+		
 		h2 {
-			padding-top: 15px;
+			font-size: 1.2em;
+			color: white;
+		}
+
+		h3 {
+			font-size: 1.1em;
 		}
 
 		h4 > a {
-			color: #70768f !important;
+			font-size: 0.95rem;
 		}
 
 		.stream_title {
@@ -633,7 +642,28 @@
 			border: initial !important;
 			padding: 10px;
 		}
+		
+		#tags_list li,
+		#tags_list a {
+			float: left;
+			font-size: 0.70rem !important;
+			line-height: 0.75rem !important;
+			padding: 2px;
+			margin: 0px !important;;
+		}
 
+		li[data-stream="public"] {
+			clear: both;
+		}
+		
+		[data-template="tag_following"] {
+			padding: 0px !important;;
+		}
+		
+		#tags_list a:hover {
+			font-size: 0.75rem !important;
+		}
+		
 		#user_menu {
 			border-radius: 5px;
 			border: 1px solid #2a3b48 !important;
