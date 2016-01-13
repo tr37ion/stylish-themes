@@ -86,7 +86,7 @@
 		.page-streams {
 			background-color: #151b1f;
 			color: #bcc7d1;
-			font-size: 0.9em !important;
+			font-size: 0.85rem !important;
 		}
 
 		.stream_container {
@@ -124,6 +124,10 @@
 			color: #86543b;
 		}
 
+		.markdown-content>p {
+			font-size: 0.8rem;			
+		}
+		
 		/* Move it to the beginning of the tag cloud, please */
 		#new_tag_following {
 			display: none;
@@ -205,12 +209,12 @@
 		}
 		
 		h2 {
-			font-size: 1.2em;
+			font-size: 1.2rem;
 			color: white;
 		}
 
 		h3 {
-			font-size: 1.1em;
+			font-size: 1.1rem;
 		}
 
 		h4 > a {
@@ -398,7 +402,7 @@
 		}
 
 		.author-name {
-			font-size: 12pt;
+			font-size: 0.9rem;
 			font-weight: normal !important;
 			color: #93b908 !important;
 		}
@@ -732,6 +736,26 @@
 		
 		#profile {
 			margin-top: 40px;
+		}
+
+		.nsfw-shield,
+		.nsfw-shield a
+		{
+			background-color: #222 !important;
+			border-color: #333 !important;
+			color: #393939 !important;
+			font-size: 0.7rem;
+			padding: 2px !important;;
+		}
+
+		.nsfw-shield:hover,
+		.nsfw-shield a:hover
+		{
+			background-color: #222 !important;
+			border-color: #4F0D00 !important;
+			color: #952A0E !important;
+			font-size: 0.7rem;
+			padding: 2px !important;;
 		}
 }
 
