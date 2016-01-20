@@ -128,6 +128,16 @@
 			font-size: 0.8rem;			
 		}
 		
+		li.active {
+			color: #7cbbd5 !important;
+			background-color: #1F3A4D !important;
+		}
+
+		.active a {
+			color: #7cbbd5 !important;
+			background-color: #45525D;
+		}
+
 		/* Move it to the beginning of the tag cloud, please */
 		#new_tag_following {
 			display: none;
@@ -366,6 +376,21 @@
 			background-color: initial !important;
 		}
 		
+		.well,
+		#profile_first_name,
+		#profile_last_name,
+		#profile_bio,
+		#profile_location,
+		#profile_gender,
+		#profile_date_year,
+		#profile_date_month,
+		#profile_date_day
+		{
+			background-color: #181F24 !important;
+			border: 1px solid #324049 !important;	
+			padding: 5px;
+		}
+		
 		#user_username,
 		#user_password {
 			background-color: #151b1f !important;
@@ -377,7 +402,6 @@
 			background-color: #181F24 !important;
 			border: 1px solid #3B4C57 !important;
 		}
-
 
 		.oembed, .collapsible {
 			min-width: 470px;
@@ -524,7 +548,18 @@
 			margin: initial;
 		}
 
+		.as-selection-item {
+			background: none !important;
+			background-color: #044553 !important;
+			border: 1px solid #0F212E !important;
+			color: #7DCCDD !important;
+			text-shadow: initial !important;
+			box-shadow: initial !important;
+		}
+		
+		#file-upload,
 		.btn-large,
+		.btn.creation,
 		.btn.btn-primary,
 		.btn.btn-default {
 			background: none !important;
@@ -541,6 +576,7 @@
 			color: #A3CBE5 !important;			
 		}
 		
+		.submit_block.btn,
 		.btn.btn-primary {
 			background-color: #378B12 !important;
 			color: #90EF65 !important;
@@ -628,10 +664,6 @@
 			background-color: #35424D;			
 		}
 		
-		.active a {
-			color: #7cbbd5 !important;
-		}
-
 		.post-content .reshare {
 			border-left: 4px double #376687 !important;
 		}
@@ -661,7 +693,7 @@
 		}
 		
 		[data-template="tag_following"] {
-			padding: 0px !important;;
+			padding: 0px !important;
 		}
 		
 		#tags_list a:hover {
@@ -717,6 +749,10 @@
 			padding: 2px 5px;
 		}
 
+		.hero-unit {
+			background-color: #151b1f;
+		}
+		
 		.loader {
 		}
 
@@ -725,7 +761,6 @@
 			margin-left: 10px;
 		}
 
-		
 		#author_info {
 			margin-top: 100px;
 			margin-bottom: 60px;
