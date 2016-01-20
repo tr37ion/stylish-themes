@@ -351,6 +351,17 @@
 			font-size: 0.8rem;
 		}
 
+		.post_preview {
+			background-color: #29211A !important;
+			border-bottom: 5px solid #523112 !important;
+			border-radius: 5px;
+			color: #9bb2bc !important;
+			padding: 20px !important;
+			margin: 30px !important;
+			font-size: 0.9rem;
+			margin: 4px 0px;			
+		}
+		
 		.comments .comment img,
 		.stream-photo-link img {
 			box-shadow:inset 0px 0px 45px rgba(0,0,0,.9);
