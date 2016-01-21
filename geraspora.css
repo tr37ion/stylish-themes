@@ -233,6 +233,7 @@
 		h4 > a {
 			font-size: 0.95rem;
 			line-height: 1.1rem;
+			color: #98A702 !important;
 		}
 
 		.stream_title {
@@ -713,6 +714,11 @@
 			border:0px solid #3a5b68 !important;			
 		}
 
+		.user-menu-more-indicator,
+		.user-name {
+			color: #42A6CC !important;
+		}
+		
 		#user_menu li.user-menu-item a:hover {
 			background-color: #35424D;	
 		}
