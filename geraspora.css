@@ -86,7 +86,7 @@
 		.page-streams {
 			background-color: #151b1f;
 			color: #bcc7d1;
-			font-size: 0.85rem !important;
+			font-size: 0.75rem !important;
 		}
 
 		.stream_container {
@@ -124,8 +124,8 @@
 			color: #86543b;
 		}
 
-		.markdown-content>p {
-			font-size: 0.8rem;			
+		.post_preview .markdown-content {
+			font-size: 0.8rem;
 		}
 		
 		li.active {
@@ -216,19 +216,23 @@
 
 		h1 {
 			font-size: 1.5rem;
+			line-height: 1.6rem;
 		}
 		
 		h2 {
 			font-size: 1.2rem;
 			color: white;
+			line-height: 1.35rem;
 		}
 
 		h3 {
 			font-size: 1.1rem;
+			line-height: 1.25rem;
 		}
 
 		h4 > a {
 			font-size: 0.95rem;
+			line-height: 1.1rem;
 		}
 
 		.stream_title {
@@ -261,19 +265,18 @@
 			border: none;
 			color: #064469;
 			padding: 10px;
-			max-width: 480px;
-			border-left: 5px dotted #c96e55;
+			border-left: 4px dotted #c96e55;
 		}
 
 		.og-description {
 			padding: 5px;
-			font-size: 0.85rem;
+			font-size: 0.75rem;
 		}
 
 		.og-title {
 			color: #a98660;
 			padding: 0px 5px;
-			font-size: 0.85rem;
+			font-size: 0.80rem;
 		}
 
 		.og-title:hover {
@@ -324,21 +327,8 @@
 			color: #5b737b !important;
 		}
 
-		.comment_stream {
-			width: 490px;
-		}
-
-		.comment_stream .bd {
-			padding: 0px !important;
-		}
-
-		.comments .bd {
-			width: 490px;
-		} 
-		
-		.comment .media,
+		.comment.media,
 		.comments .media {
-			width: 490px;
 			margin-left: 3px;
 		} 
 		
@@ -369,9 +359,9 @@
 			border-radius: 5px;
 			margin: 4px 0px;
 		}
-		
+
 		.comment-content {
-			font-size: 0.75rem;
+			font-size: 0.70rem;
 		}
 
 		.comment_box, .as-input { 
@@ -381,6 +371,10 @@
 			font-size: 0.9rem;
 			padding: 0px 5px 0px 5px !important;
 			margin: 4px 0px;
+		}
+		
+		.collapsible {
+			width: initial;
 		}
 		
 		fieldset {
@@ -412,10 +406,6 @@
 		#user_password:hover {
 			background-color: #181F24 !important;
 			border: 1px solid #3B4C57 !important;
-		}
-
-		.oembed, .collapsible {
-			min-width: 470px;
 		}
 
 		.as-selections {
@@ -525,7 +515,6 @@
 			padding: 30px;
 			margin-left: 10px !important;
 			border: 0px solid #f00 !important;
-			float: right;
 			min-width: 540px;
 			background: -moz-linear-gradient(left, rgba(21,27,31,0.95) 50%, rgba(21,27,31,0) 100%);
 			background: linear-gradient(to right, rgba(21,27,31,0.95) 50%,rgba(21,27,31,0) 100%);
