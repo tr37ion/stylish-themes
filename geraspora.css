@@ -703,28 +703,59 @@
 		
 		#user_menu {
 			border-radius: 5px;
+			width: 140px;
+			background-color: #151B1F !important;
 			border: 1px solid #2a3b48 !important;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.9) !important;
 		}
 		
-		#user_menu li {
+		#user_menu > li {
 			border-radius: 5px;
-			padding: 1px 5px;
+			padding: 5px;
 			font-size: 0.8rem;
 			color: #236587;
 			border:0px solid #3a5b68 !important;			
 		}
 
-		.user-menu-more-indicator,
-		.user-name {
-			color: #42A6CC !important;
+		.user-menu-more-indicator {
+			color: #7FFFFF !important;
 		}
 		
-		#user_menu li.user-menu-item a:hover {
-			background-color: #35424D;	
+		.user-name {
+			color: #9AB02F !important;
+			background-color: initial !important;
 		}
+		
+		.user-name:hover {
+			color: #B7D138 !important;
+			background-color: initial !important;
+		}
+		
+		#user_menu>li.user-menu-item a {
+			background-color: initial;	
+			padding: 0px;
+			padding-left: 40px;
+			margin: 0px;
+		}
+
+		#user_menu>li.user-menu-item a:hover {
+			background-color: #35424D;
+			border-radius: 3px;
+			color: #7FFFFF !important;
+		}
+		
+		#user_menu>li.user-menu-item a[href="/users/sign_out"] {
+			color: #B84D18 !important;
+			background-color: #33190C;
+		}		
+
+		#user_menu>li.user-menu-item a[href="/users/sign_out"]:hover {
+			color: #CC551B !important;
+			background-color: #442110;
+		}		
 		
 		.avatar.avatar.user-menu-avatar {
-			top: 23px !important;
+			top: 30px !important;
 			box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.9);
 		}
 		
