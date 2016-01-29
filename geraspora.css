@@ -811,6 +811,10 @@
 			margin-top: 40px;
 		}
 
+		#welcome-to-diaspora {
+    		background: #8ca800;
+		}
+		
 		div .arrow,
 		.popover .arrow::after {
 			position: absolute;
@@ -824,6 +828,7 @@
 		.popover {
 			background-color: #111d2a;
 			border: 1px solid #113856;
+			box-shadow: 0 5px 10px rgba(0, 131, 215, 0.2);
 		}
 		
 		.popover-title {
