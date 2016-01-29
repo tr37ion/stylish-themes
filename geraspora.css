@@ -802,6 +802,7 @@
 			margin-top: 100px;
 			margin-bottom: 60px;
 		}
+		
 		.profile_header {
 			max-width: 620px;
 		}
@@ -810,6 +811,26 @@
 			margin-top: 40px;
 		}
 
+		div .arrow,
+		.popover .arrow::after {
+			position: absolute;
+			display: block;
+			width: 0;
+			height: 0;
+			border-color: #111d2a;
+			border-style: solid;
+		}
+		
+		.popover {
+			background-color: #111d2a;
+			border: 1px solid #113856;
+		}
+		
+		.popover-title {
+    		background-color: #162638;
+    		border-bottom: 1px solid #181D20;
+		}
+		
 		.nsfw-shield,
 		.nsfw-shield a
 		{
@@ -828,6 +849,12 @@
 			color: #952A0E !important;
 			font-size: 0.7rem;
 			padding: 2px !important;;
+		}
+
+		.fade {
+			opacity: 0;
+			-webkit-transition: opacity 0.15s ease;
+			transition: opacity 0.15s ease;
 		}
 }
 
