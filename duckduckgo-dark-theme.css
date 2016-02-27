@@ -9,7 +9,7 @@
         background: none repeat scroll 0 0 #222222 !important;
     }   
     body, .zci, .result__snippet {
-        color: #aaaaaa;
+        color: #aaa;
         font-size: 14px;
         background: none repeat scroll 0 0 #222222 !important;
     }
@@ -34,6 +34,11 @@
         background-color: #222222 !important;
         max-width: 65em;
     }
+    .result__pagenum--side {
+       padding: 0;
+       background-color: #282828;
+        color: #666;
+    }
     .results highlight {
         background-color: #333 !important;  
     }
@@ -46,6 +51,22 @@
         position: absolute;
         left: 16px;
         top: 24px;
+    }
+    .result__badge {
+       top: 2px;
+    }
+    .result__menu:hover {
+        color: #e0972b !important;
+        text-decoration: underline;
+    }
+    #links .results_links_deep {
+        border: 0px none !important;
+    }
+    .results_links, .results_zero_click, .results_disambig, .results_links_more, .results_category_more, .results_disambig_more {
+        border: 0px none !important;
+    }
+    .result, .cw .results--didya, .cw--c .results--didya {
+        background-color: #222222;
     }
     .btn--top {
         background-color: rgb(222, 88, 51);
@@ -223,9 +244,6 @@
         background-color: #1a1a1a;
         border: 1px solid #3f3f3f;
     }
-    .result, .cw .results--didya, .cw--c .results--didya {
-        background-color: #222222;
-    }
     .site-wrapper:before {
         background-color: #4477aa;
     }
@@ -360,12 +378,6 @@
     #links .icon_fav img, .icon_fav2 img {
         height: 24px !important;
         width: 24px !important;
-    }
-    #links .results_links_deep {
-        border: 0px none !important;
-    }
-    .results_links, .results_zero_click, .results_disambig, .results_links_more, .results_category_more, .results_disambig_more {
-        border: 0px none !important;
     }
     .navbutton {
         color: #76C7FF !important;
