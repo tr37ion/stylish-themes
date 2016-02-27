@@ -25,6 +25,19 @@
         .header__search {
             margin-right: 19px;
         }
+        .results--sidebar--mid .btn--top {
+            position: absolute;
+            left: 16px;
+            top: 24px;
+        }
+        .btn--top {
+            background-color: rgb(222, 88, 51);
+            color: #222;
+        }
+        .btn--top:hover {
+            background-color: rgb(242, 108, 71);
+            color: #222;
+        }
         .btn--primary, .btn {
             background: #333;
             border: 1px solid #333;
@@ -214,6 +227,13 @@
             background-color: #206083;
             border: 3px solid #222;
         }
+        .tileview--grid .metabar--fixed.is-stuck {
+           box-shadow: 0 1px 0 rgb(51, 51, 51);
+        }
+        .tileview--grid .metabar--fixed.is-stuck {
+           background-color: rgb(27, 27, 27);
+        }
+        
         .modal--popover--dk.is-showing {
           background: rgba(0,0,0,0.75);
         }
