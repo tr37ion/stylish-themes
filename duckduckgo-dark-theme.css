@@ -23,6 +23,13 @@
         margin-left: 0;
         margin-right: auto;
     }
+    .tile__expand {
+        background-color: #383838;
+        border-top: 1px solid #444;
+    }
+    .tile--info .info {
+        border-top: 1px solid #404040;
+    }
     .result, .results, .results_links, .highlight_v, .result__snippet {
         background-color: #222222 !important;
         max-width: 65em;
