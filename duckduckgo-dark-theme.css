@@ -78,7 +78,7 @@
           border: 1px solid rgba(231, 255, 0, 0.3);
         }
         .badge--ad {
-             background-color: #f0a630;
+            background-color: #274771;
         }
         #search_button {
             padding-top: 2px;
@@ -208,6 +208,11 @@
         .tile--m:hover {
            text-align: center;
            background-color: #444;
+        }
+        .tile-nav.can-scroll, .tile-nav.can-scroll::after {
+            color: #fff;
+            background-color: #206083;
+            border: 3px solid #222;
         }
         .modal--popover--dk.is-showing {
           background: rgba(0,0,0,0.75);
@@ -377,4 +382,4 @@
           margin-bottom: 0;
        }
     }
-    
+
