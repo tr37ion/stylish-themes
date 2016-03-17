@@ -235,7 +235,16 @@
 			line-height: 1.1rem;
 			color: #98A702 !important;
 		}
-
+		
+		.oembed .thumb .video-overlay {
+    		height: initial;
+			position: initial;
+			background-color: rgba(0,0,0,0.25);
+			border-radius: 60px 10px 10px 60px;
+			box-shadow: 0 0 0px rgba(255,255,255,0.5);
+            margin-top: 10px;
+		}
+		
 		.stream_title {
 			color: #dc8774;
 			padding: 25px 10px 00px 10px;
